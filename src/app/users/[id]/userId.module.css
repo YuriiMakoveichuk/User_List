@@ -1,0 +1,43 @@
+.box {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: all 250ms linear;
+}
+
+.link:focus,
+.link:hover {
+  color: blue;
+  border: 2px solid black;
+}
+
+.list {
+  padding: 40px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text span {
+  font-weight: 700;
+  font-size: 20px;
+}

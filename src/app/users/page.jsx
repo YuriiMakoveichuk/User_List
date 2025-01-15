@@ -10,19 +10,18 @@ import css from "./users.module.css";
 
 const UsersPage = async () => {
   const users = await fetchUsers();
-  console.log(users);
 
   return (
     <>
       <Header />
       <Container>
-        <div className={css.list}>
+        <ul className={css.list}>
           {users.map((user) => (
-            <div key={user.id}>
+            <li className={css.item} key={user.id}>
               <Link href={`/users/${user.id}`}>{user.name}</Link>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </Container>
     </>
   );
