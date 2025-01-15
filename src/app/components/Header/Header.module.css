@@ -1,0 +1,16 @@
+.header {
+  border-bottom: 2px solid black;
+}
+
+.navHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.link {
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: 600;
+}

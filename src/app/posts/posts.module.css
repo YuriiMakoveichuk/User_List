@@ -1,0 +1,10 @@
+.list {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item::first-letter {
+  text-transform: uppercase;
+}
