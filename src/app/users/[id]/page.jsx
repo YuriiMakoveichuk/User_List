@@ -1,9 +1,8 @@
 import React from "react";
 import Link from "next/link.js";
 
-import Container from "@/app/components/Container/Container.jsx";
-
-import { fetchUserId } from "@/app/apiServer/apiUsersPosts.js";
+import Container from "../../components/Container/Container.jsx";
+import { fetchUserId } from "../../apiServer/apiUsersPosts.js";
 
 import css from "./userId.module.css";
 
