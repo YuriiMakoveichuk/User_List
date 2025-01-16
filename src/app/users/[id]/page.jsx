@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link.js";
 
 import Container from "@/app/components/Container/Container.jsx";
-import Header from "@/app/components/Header/Header.jsx";
 
 import { fetchUserId } from "@/app/apiServer/apiUsersPosts.js";
 
@@ -11,11 +10,9 @@ import css from "./userId.module.css";
 const User = async ({ params }) => {
   const { id } = params;
   const user = await fetchUserId(id);
-  console.log(user);
 
   return (
     <>
-      <Header />
       <Container>
         <div className={css.box}>
           <Link className={css.link} href={"/users"}>

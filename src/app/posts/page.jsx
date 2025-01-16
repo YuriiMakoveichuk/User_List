@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "../components/Header/Header.jsx";
 import Container from "../components/Container/Container.jsx";
 
 import { fetchPosts } from "../apiServer/apiUsersPosts.js";
@@ -12,7 +11,6 @@ const PostsPage = async () => {
 
   return (
     <>
-      <Header />
       <Container>
         <ol className={css.list}>
           {posts.map((post) => (

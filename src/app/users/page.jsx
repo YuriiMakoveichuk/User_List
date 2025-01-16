@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link.js";
 
-import Header from "../components/Header/Header.jsx";
 import Container from "../components/Container/Container.jsx";
 
 import { fetchUsers } from "../apiServer/apiUsersPosts.js";
@@ -13,7 +12,6 @@ const UsersPage = async () => {
 
   return (
     <>
-      <Header />
       <Container>
         <ul className={css.list}>
           {users.map((user) => (
